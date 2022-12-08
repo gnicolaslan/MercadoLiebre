@@ -1,0 +1,59 @@
+.home__header {
+    background-color: #EAC926;
+}
+
+.home__header__nav--titulo {
+    text-align: center;
+}
+
+.home__header__nav--logo {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.home__header__nav__container {
+    width: 100%;
+    padding: 5%;
+    background-position: center;
+}
+
+.home__header__nave--burger-menu {
+    color: var(--colorCeleste);
+    margin-left: 45%;
+    padding: 5%;
+    font-size: 20px;
+}
+
+.home__main--titulo {
+    font-size: 24px;
+}
+
+.home__main--precios {
+    font-size: 18px;
+}
+
+.home__main h4 {
+    font-size: 16px;
+}
+
+.home__main--descuento {
+    font-size: 16px
+}
+
+.home__footer__div i {
+    margin-left: 50%;
+    color: var(--colorCeleste);
+    font-size: 2.5em;
+    margin-bottom: -1%;
+}
+
+.home__footer__div--titulo {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: -2%;
+}
+
+.home__footer__div--subtitulo {
+    text-align: center;
+    margin-bottom: 15%;
+}
