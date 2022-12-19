@@ -18,4 +18,5 @@ ul, ol {
 
 .home__footer {
     color: var(--colorOscuro);
+    padding: 15px;
 }

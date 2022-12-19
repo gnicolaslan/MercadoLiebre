@@ -1,5 +1,14 @@
+body {
+    margin: 0px;
+}
+
 .home__header {
     background-color: #EAC926;
+    padding: 10px;
+}
+
+.home__header__nav li{
+    display: none;
 }
 
 .home__header__nav--titulo {
@@ -7,8 +16,8 @@
 }
 
 .home__header__nav--logo {
-    margin-top: 50px;
-    margin-left: 20px;
+    width: 60%;
+    padding-top: 10%;
 }
 
 .home__header__nav__container {
@@ -17,11 +26,57 @@
     background-position: center;
 }
 
-.home__header__nave--burger-menu {
-    color: var(--colorCeleste);
-    margin-left: 45%;
-    padding: 5%;
-    font-size: 20px;
+.header__burger {
+    width: 45px;
+    height: 45px;
+    background-color: var(--colorCeleste);
+    margin: 5% auto 30px;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 25px;
+    color: white;
+    border: solid 50% var(--colorCeleste);
+    border-radius: 10px;
+}
+
+.home__main {
+    background-color: var(--colorGris)
+}
+
+.home__main--banner {
+    width: 100%;
+}
+
+.home__main section {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.home__main--article {
+    background-color: white;
+    box-sizing: border-box;
+    border: solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.home__main--article i{
+    width: 10px;
+    height: 11px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--colorVerde);
+    background-color: white;
+    display: block;
+    color: var(--colorVerde);
+    padding-right: 14px;
+    margin-top: 15px;
+}
+
+.sub-contenedor {
+    border-top: 1px solid #ebebeb;
 }
 
 .home__main--titulo {
@@ -30,14 +85,20 @@
 
 .home__main--precios {
     font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 5px;
 }
 
-.home__main h4 {
+.home__main--article h4 {
     font-size: 16px;
+    margin-bottom: 15px;
+    display: none;
 }
 
 .home__main--descuento {
-    font-size: 16px
+    font-size: 16px;
+    color: var(--colorVerde);
+    margin-top: 5px;
 }
 
 .home__footer__div i {
@@ -56,4 +117,23 @@
 .home__footer__div--subtitulo {
     text-align: center;
     margin-bottom: 15%;
+}
+
+@media (min-width: 361px) {
+    .home__header__nav li{
+        display: block;
+    }
+    .header__burger {
+        display: none;
+    }
+    .home__main--article {
+        box-shadow: 6px 7px 11px -6px rgba(0,0,0,0.75);
+    }
+    .home__main--article h4 {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    
 }

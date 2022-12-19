@@ -3,7 +3,8 @@
     --colorAmarillo : #EAC926;
     --colorAzul : #03264C;
     --colorCeleste : #1259c3;
-    --colorOscuro : #666;
+    --colorOscuro : rgb(122, 122, 122);
+    --colorGris : rgb(224, 224, 224);
     --colorClaro : #ebebeb;
     --colorVerde : #39b54a;
 }
