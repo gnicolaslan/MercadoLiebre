@@ -1,3 +1,8 @@
+* {
+    margin: 0 px;
+    padding: 0 px;
+}
+
 .home {
     font-family: var(--tipografiaGeneral);
     font-size: 12px;

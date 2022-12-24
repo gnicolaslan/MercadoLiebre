@@ -1,10 +1,20 @@
 body {
     margin: 0px;
+    box-sizing: border-box;
+    
 }
 
 .home__header {
     background-color: #EAC926;
-    padding: 10px;
+    width: 100%;
+}
+
+.home__header__nav {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .home__header__nav li{
@@ -12,18 +22,29 @@ body {
 }
 
 .home__header__nav--titulo {
+    width: 100%;
     text-align: center;
+    padding-top: 15px;
 }
 
 .home__header__nav--logo {
-    width: 60%;
-    padding-top: 10%;
-}
+    width: 45%;
 
-.home__header__nav__container {
+}
+.home__header__nav--logo img {
     width: 100%;
-    padding: 5%;
-    background-position: center;
+}
+.home__header__nav__container{
+    width: 50%;
+}
+.home__header__nav__container input{
+    box-sizing: border-box;
+    border: none;
+}
+.home__header__nav__container button{
+    background-color: #fff;
+    color: var(--colorOscuro);
+    border: none;
 }
 
 .header__burger {
@@ -32,11 +53,11 @@ body {
     background-color: var(--colorCeleste);
     margin: 5% auto 30px;
     margin-bottom: 5px;
-    display: block;
     font-size: 25px;
     color: white;
     border: solid 50% var(--colorCeleste);
     border-radius: 10px;
+    
 }
 
 .home__main {
@@ -51,6 +72,8 @@ body {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .home__main--article {
@@ -60,33 +83,50 @@ body {
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+
 }
 
-.home__main--article i{
-    width: 10px;
-    height: 11px;
-    padding: 10px;
-    border-radius: 50%;
-    border: 1px solid var(--colorVerde);
-    background-color: white;
-    display: block;
-    color: var(--colorVerde);
-    padding-right: 14px;
-    margin-top: 15px;
+.home__main--article img {
+    width: 100%
 }
 
 .sub-contenedor {
     border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    position: relative;
 }
-
+.sub-contenedor i{
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--colorVerde);
+    background-color: white;
+    display: block;
+    color: var(--colorVerde);
+    font-size: 10px;
+    position: absolute;
+    right: 15px;
+    top: -15px
+}
 .home__main--titulo {
     font-size: 24px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: var(--colorOscuro);
+    
 }
 
 .home__main--precios {
     font-size: 18px;
-    margin-bottom: 0px;
-    margin-top: 5px;
+    width: 30%;
+    /* margin-bottom: 0px; */
+    /* margin-top: 5px; */
 }
 
 .home__main--article h4 {
@@ -96,9 +136,10 @@ body {
 }
 
 .home__main--descuento {
-    font-size: 16px;
+    font-size: 1.1rem;
     color: var(--colorVerde);
-    margin-top: 5px;
+    width: 70%;
+    /* margin-top: 5px; */
 }
 
 .home__footer__div i {
@@ -119,21 +160,69 @@ body {
     margin-bottom: 15%;
 }
 
-@media (min-width: 361px) {
-    .home__header__nav li{
-        display: block;
+@media (min-width: 768px) {
+    .home__header nav{
+        gap: 20px;
+/* padding: 10px; */
     }
+    .home__header__nav--logo{
+        width: 30%
+    }
+
+    .home__header__nav__container {
+        width: 30%;
+    }
+    .home__header__nav--titulo {
+        width: 30%;
+        
+    }
+    .home__header__nav ul {
+        display: flex;
+        gap: 10px;
+    }
+    .home__header__nav li{
+        display: flex;
+        justify-content: space-around;
+    }
+    
     .header__burger {
         display: none;
     }
+    .home__main section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .home__main--article {
         box-shadow: 6px 7px 11px -6px rgba(0,0,0,0.75);
+        width: 48%;
+    }
+    .sub-contenedor {
+       
     }
     .home__main--article h4 {
         display: block;
     }
+    
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1180px) {
+    .home__header__nav--titulo {
+        text-align: end;
+        font-size: 16px;
+    }
+    .home__header__nav__container input{
+        width: 90%;
+    }
+    .home__main--article {
+        box-shadow: 6px 7px 11px -6px rgba(0,0,0,0.75);
+        width: 24%;
+    }
+    .home__main--precios {
+        font-size: 16px;
+    }
     
+    .home__main--descuento {
+        font-size: 14px;
+    }
 }
