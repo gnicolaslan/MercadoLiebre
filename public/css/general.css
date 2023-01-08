@@ -1,6 +1,6 @@
 * {
-    margin: 0 px;
-    padding: 0 px;
+    margin: 0px px;
+    padding: 0px px;
 }
 
 .home {
@@ -12,13 +12,16 @@ a {
     text-decoration: double;
     color: black;
 }
+.button a{
+    color: white;
+}
 
 li {
     list-style: none;
 }
 
 ul, ol {
-    padding: 0;
+    padding: 5px 70px;
 }
 
 .home__footer {

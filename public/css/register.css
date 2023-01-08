@@ -1,0 +1,14 @@
+.register__main__section__article{
+    padding: 15px;
+    background-color: rgba(182, 182, 182, 0.5);
+}
+.register__main{
+    padding: 15px; 
+    border-radius: 5px;
+}
+@media (min-width:768px) {
+    .register__main{
+        width: 70%;
+        margin: auto;
+    }
+}

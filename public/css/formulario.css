@@ -1,0 +1,68 @@
+
+.register__titular{
+    font-size: 16px;
+}
+.form__box{
+    padding: 15px 0px 15px 0px;
+    width: 95%;
+}
+.form__box__label{
+    font-size: 14px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+.form__radio__label{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.form__radio{
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+}
+.form__checkbox{
+    display: block;
+    flex-direction: column;
+    width: 50%;
+    padding: 15px 0px;
+    font-size: 14px;
+
+}
+.form__checkbox__label{
+    font-size: 14px;
+    font-weight: bolder;
+    width: 100%;
+}
+.form__checkbox input{
+    width: 50%;
+}
+.form__box input{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 6px;
+}
+.form__header{
+    margin: 30px 0;
+    color: white;
+}
+.form__box--button{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.form__label{
+    color: white;
+}
+.form__footer{
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    
+}

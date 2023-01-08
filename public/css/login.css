@@ -1,0 +1,14 @@
+.login__main{
+    padding: 15px; 
+    border-radius: 5px;
+}
+.login__main__section__article{
+    padding: 15px;
+    background-color: rgba(182, 182, 182, 0.5);
+}
+@media (min-width:768px) {
+    .login__main{
+        width: 70%;
+        margin: auto;
+    }
+}
